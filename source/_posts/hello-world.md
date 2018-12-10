@@ -36,3 +36,10 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+
+### Table test
+
+|bucket 0 | bucket 1 |
+|:---------: | :---------: |
+|E F G H I | A B C D |
