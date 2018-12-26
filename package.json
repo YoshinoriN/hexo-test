@@ -15,6 +15,6 @@
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-server": "^0.3.1",
-    "hexo-generator-feed": "^1.2.2"
+    "hexo-generator-feed": "git+https://github.com/zbicin/hexo-generator-feed.git#master"
   }
 }
