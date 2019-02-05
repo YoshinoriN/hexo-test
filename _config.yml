@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -97,11 +97,13 @@ feed:
 math:
   engine: 'mathjax' # or 'katex'
   mathjax:
-    src: custom_mathjax_source
+    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML
     config:
-      # MathJax config
+      tex2jax:
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ]
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
   katex:
-    css: custom_css_source
-    js: custom_js_source # not used
-    config:
+    css: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css
+    js: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js # not used
+    #config:
       # KaTeX config
