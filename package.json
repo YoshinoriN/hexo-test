@@ -5,6 +5,11 @@
   "hexo": {
     "version": "3.8.0"
   },
+  "scripts": {
+    "start": "del db.json && hexo server",
+    "live": "live-server --port=4000 public",
+    "gen": "del db.json && cd source && git gc && cd .. && hexo generate && cd public && git add -A && git commit"
+  },
   "dependencies": {
     "hexo": "git+https://github.com/hexojs/hexo#master",
     "hexo-deployer-git": "^1.0.0",
